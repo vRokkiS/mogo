@@ -1,0 +1,130 @@
+h1,
+h6 {
+  margin: 0;
+  font-weight: 400;
+}
+.INTRO {
+  background-image: url(../img/bannerBackground.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 100vh;
+  color: #fff;
+}
+.INTRO .INTRO_block {
+  width: 88vw;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.INTRO .INTRO_block .INTRO_header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 30px 0;
+}
+.INTRO .INTRO_block .INTRO_header .logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+.INTRO .INTRO_block .INTRO_header a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 2vw;
+}
+.INTRO .INTRO_block .INTRO_header a:last-child {
+  margin: 0 0 0 28px;
+}
+.INTRO .INTRO_block .INTRO_header a:hover {
+  color: #fce38a;
+  border-bottom: 3px solid #fce38a;
+  padding-bottom: 10px;
+  transition: 0.15s linear;
+}
+.INTRO .INTRO_block .INTRO_header a.activeNav {
+  color: #fce38a;
+  border-bottom: 3px solid #fce38a;
+  padding-bottom: 10px;
+}
+.INTRO .INTRO_block .INTRO_main {
+  text-align: center;
+}
+.INTRO .INTRO_block .INTRO_main .welcome {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 3em;
+}
+.INTRO .INTRO_block .INTRO_main h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6em;
+  font-weight: 700;
+  line-height: 0.95;
+  text-transform: uppercase;
+  margin: 30px auto 40px auto;
+}
+.INTRO .INTRO_block .INTRO_main h1:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #fff;
+  margin: 20px auto;
+}
+.INTRO .INTRO_block .INTRO_main .btn_more {
+  display: inline-block;
+  padding: 10px 30px;
+  border: 3px solid #fff;
+  margin: 0 auto;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  transition: background 0.1s linear, color 0.1s linear;
+}
+.INTRO .INTRO_block .INTRO_main .btn_more:hover {
+  transition: background 0.1s linear, color 0.1s linear;
+  background-color: #fff;
+  color: #333;
+}
+.INTRO .INTRO_block .INTRO_footer ol {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+.INTRO .INTRO_block .INTRO_footer ol li {
+  display: inline-block;
+  list-style-type: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  position: relative;
+  border-top: 3px solid #fff;
+  width: 18.5vw;
+  padding: 15px 0;
+  opacity: 0.7;
+}
+.INTRO .INTRO_block .INTRO_footer ol li span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+.INTRO .INTRO_block .INTRO_footer ol .activeSlider {
+  opacity: 1;
+}
+.INTRO .INTRO_block .INTRO_footer ol .activeSlider:before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: #f38181;
+  position: absolute;
+  top: -3px;
+}
