@@ -328,7 +328,7 @@ h6 {
   top: 49%;
   z-index: 200;
 }
-/* ACTIVITY block */
+/* Activity block */
 .ACTIVITY .ACTIVITY_block {
   width: 88vw;
   margin: 0 auto;
@@ -355,7 +355,6 @@ h6 {
   flex-direction: column;
   justify-content: space-between;
   align-items: space-between;
-  /* ACCORDION */
 }
 .ACTIVITY .ACTIVITY_block .ACTIVITY_content .ACTIVITY_content_item .accordion .accordion_item {
   border: 1px solid #e5e5e5;
@@ -481,6 +480,233 @@ h6 {
   top: -5px;
   margin-right: 10px;
 }
+/* Team block */
+.TEAM .TEAM_block {
+  width: 88vw;
+  margin: 0 auto;
+  text-align: center;
+}
+.TEAM .TEAM_block .TEAM_galery {
+  margin-top: 96px;
+  display: flex;
+  justify-content: space-between;
+}
+.TEAM .TEAM_block .TEAM_galery .TEAM_image {
+  position: relative;
+  background-color: #95e1d3;
+}
+.TEAM .TEAM_block .TEAM_galery .TEAM_image:hover .socnet {
+  opacity: 1;
+  transform: translate(-10px, -10px);
+  transition: opacity 0.2s, transform 0.4s;
+}
+.TEAM .TEAM_block .TEAM_galery .TEAM_image:after {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: 0.4s;
+  background: linear-gradient(0deg, #fce38a, #f38181);
+}
+.TEAM .TEAM_block .TEAM_galery .TEAM_image:hover:after {
+  opacity: 0.9;
+  transition: 0.4s;
+  transform: translate(-10px, -10px);
+}
+.TEAM .TEAM_block .TEAM_galery .TEAM_image img {
+  transition: 0.4s;
+  display: block;
+  width: 100%;
+}
+.TEAM .TEAM_block .TEAM_galery .TEAM_image:hover img {
+  transform: translate(-10px, -10px);
+  transition: 0.4s;
+}
+.TEAM .TEAM_block .TEAM_galery .TEAM_person {
+  padding-top: 30px;
+}
+.TEAM .TEAM_block .TEAM_galery .TEAM_person .TEAM_name {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+.TEAM .TEAM_block .TEAM_galery .TEAM_person .TEAM_profession {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+  color: #999999;
+}
+.TEAM .TEAM_block .TEAM_galery .socnet {
+  opacity: 0;
+  z-index: 500;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -20px;
+  margin-left: -115px;
+  transition: opacity 0.2s, transform 0.4s;
+  display: flex;
+  background-color: #fff;
+}
+.TEAM .TEAM_block .TEAM_galery .socnet a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  background-color: #fce38a;
+  color: #f38181;
+  font-size: 24px;
+  text-decoration: none;
+  border-right: 1px solid #f9bd87;
+  transition: 0.2s;
+}
+.TEAM .TEAM_block .TEAM_galery .socnet a:hover {
+  background-color: #f38181;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  border-right: 1px solid #f9bd87;
+  transition: 0.1s;
+}
+.TEAM .TEAM_block .TEAM_galery .socnet a:nth-child(4) {
+  border-right-width: 0px;
+}
+/* Logotypes block */
+.LOGOTYPES {
+  background-color: #f8f8f8;
+}
+.LOGOTYPES .LOGOTYPES_content {
+  width: 88vw;
+  margin: 0 auto;
+  padding: 50px 0;
+  margin-top: 118px;
+  display: grid;
+  grid-template-columns: repeat(6, 130px);
+  justify-content: space-between;
+}
+.LOGOTYPES .LOGOTYPES_content .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+}
+/* WORKS block */
+.WORKS .WORKS_content {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 106px;
+}
+.WORKS .WORKS_content .WORKS_item {
+  position: relative;
+}
+.WORKS .WORKS_content .WORKS_item:after {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: 0.4s;
+  background: linear-gradient(0deg, #fce38a, #f38181);
+}
+.WORKS .WORKS_content .WORKS_item:hover:after {
+  opacity: 0.9;
+}
+.WORKS .WORKS_content .WORKS_item:hover .WORK_text {
+  opacity: 1;
+}
+.WORKS .WORKS_content .WORK_image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.WORKS .WORKS_content .WORK_text {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  text-align: center;
+  transform: translate3d(0, -50%, 0);
+  z-index: 2;
+  opacity: 0;
+}
+.WORKS .WORKS_content .WORK_text .text_title {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: #fff;
+  margin: 0;
+}
+.WORKS .WORKS_content .WORK_text .text_description {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #999999;
+  font-weight: 300;
+  color: #fff;
+  font-style: italic;
+  margin: 0;
+}
+/* WORKS_QUOTE block */
+.WORKS_QUOTE .WORKS_QUOTE_content {
+  max-width: 1000px;
+  margin: 100px auto 130px auto;
+  padding: 0 50px;
+  display: flex;
+}
+.WORKS_QUOTE .WORKS_QUOTE_text {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 780px;
+}
+.WORKS_QUOTE .WORKS_QUOTE_text p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: italic;
+  color: #999999;
+  line-height: 36px;
+  padding: 0;
+  margin: 0;
+}
+.WORKS_QUOTE .WORKS_QUOTE_text p:before {
+  content: "\201c";
+}
+.WORKS_QUOTE .WORKS_QUOTE_text p:after {
+  content: "\201d";
+}
+.WORKS_QUOTE .WORKS_QUOTE_author {
+  padding-top: 20px;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 24px;
+}
+.WORKS_QUOTE .WORKS_QUOTE_author:before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+  position: relative;
+  top: -5px;
+  margin-right: 10px;
+}
 @media (max-width: 1333px) {
   .ABOUT_galery .ABOUT_galery_item img {
     width: 100%;
@@ -525,5 +751,25 @@ h6 {
   }
   .SERVICE_table .SERVICE_table_item:nth-child(4) {
     border-bottom: 1px solid #e5e5e5;
+  }
+  .LOGOTYPES_content {
+    grid-template-columns: repeat(3, 130px) !important;
+    grid-template-rows: repeat(2, 1fr) !important;
+  }
+}
+@media (max-width: 800px) {
+  .TEAM_galery .socnet {
+    flex-direction: column;
+    left: 5% !important;
+    top: 5% !important;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+  }
+  .TEAM_galery .socnet a {
+    border-right-width: 0px !important;
+    border-top: 1px solid #f9bd87;
+  }
+  .TEAM_galery .socnet a:nth-child(1) {
+    border-top-width: 0px;
   }
 }

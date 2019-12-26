@@ -1,0 +1,46 @@
+h3 {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 24px;
+	color: #333;
+	margin-top: 90px;
+}
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	color: #333;
+	margin: 0;
+	text-transform: uppercase;
+}
+h2:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background-color: #f38181;
+	margin: 40px auto;
+}
+p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	color: #999999;
+	
+}
+
+/* aboutUs model */
+
+.aboutUs {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.facts-container {
+	margin-top: 100px;
+	background-color: #95e1d3;
+	display: flex;
+	justify-content: center;
+}
+
+.service {
+	width: 1200px;
+	margin: 0 auto;
+}
