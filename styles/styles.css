@@ -707,9 +707,160 @@ h6 {
   top: -5px;
   margin-right: 10px;
 }
+/* REVIEWS */
+.REVIEWS {
+  background-image: url(../img/reviews_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 60px;
+}
+.REVIEWS .REVIEWS_content {
+  padding-top: 63px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 83vw;
+  margin: 0 auto;
+  padding-bottom: 52px;
+}
+.REVIEWS .REVIEWS_content .REVIEWS_item {
+  display: flex;
+  margin-bottom: 50px;
+}
+.REVIEWS .REVIEWS_content .REVIEWS_item .review_content {
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+.REVIEWS .REVIEWS_content .REVIEWS_item .review_author {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 16px;
+}
+.REVIEWS .REVIEWS_content .REVIEWS_item .review_author_profession {
+  display: block;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #999999;
+  padding-bottom: 22px;
+  font-weight: 300;
+  font-style: italic;
+  color: #000;
+}
+.REVIEWS .REVIEWS_content .REVIEWS_item .review_author_profession:after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+  position: absolute;
+  top: 32px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.REVIEWS .REVIEWS_content .REVIEWS_item .review_text {
+  line-height: 24px;
+  width: 100%;
+  color: #999;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #999999;
+}
+/* BLOG */
+.BLOG .BLOG_content {
+  width: 87vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+}
+.BLOG .BLOG_content .BLOG_post .blog_image {
+  position: relative;
+  width: 100%;
+}
+.BLOG .BLOG_content .BLOG_post .blog_image img {
+  display: block;
+  width: 100%;
+}
+.BLOG .BLOG_content .BLOG_post .blog_image .blog_date {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  top: 100%;
+  transform: translate(-10px, -114%);
+  padding: 10px 15px;
+  text-align: center;
+  background-color: #95e1d3;
+  color: #fff;
+}
+.BLOG .BLOG_content .BLOG_post .blog_image .blog_date .date_num {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+.BLOG .BLOG_content .BLOG_post .blog_image .blog_date .date_month {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #999999;
+  font-weight: 300;
+  font-style: italic;
+  color: #fff;
+}
+.BLOG .BLOG_content .BLOG_post .blog_text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  display: block;
+  padding: 0 25px 10px 0;
+  max-width: 350px;
+  color: #999999;
+}
+.BLOG .BLOG_content .BLOG_post .blog_text .blog_title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: block;
+  padding: 20px 0 0 0;
+  color: #000;
+}
+.BLOG .BLOG_content .BLOG_post .blog_stat {
+  color: #95e1d3;
+  padding-top: 20px;
+  border-top: 1px solid #e5e5e5;
+}
+.BLOG .BLOG_content .BLOG_post .blog_stat .stat_looks,
+.BLOG .BLOG_content .BLOG_post .blog_stat .stat_comments {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+  color: #999999;
+  padding-left: 5px;
+  padding-right: 20px;
+}
 @media (max-width: 1333px) {
   .ABOUT_galery .ABOUT_galery_item img {
     width: 100%;
+  }
+  .BLOG_content {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(2, 1fr) !important;
+  }
+  .BLOG_content .BLOG_post {
+    margin: 0 auto;
+  }
+  .BLOG_content .BLOG_post .blog_image {
+    width: 370px !important;
+  }
+  .BLOG_content .BLOG_post .blog_stat {
+    width: 370px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 1080px) {
@@ -755,6 +906,26 @@ h6 {
   .LOGOTYPES_content {
     grid-template-columns: repeat(3, 130px) !important;
     grid-template-rows: repeat(2, 1fr) !important;
+  }
+  .REVIEWS_content {
+    grid-template-rows: repeat(4, 1fr) !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+@media (max-width: 890px) {
+  .BLOG_content {
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-rows: repeat(3, 1fr) !important;
+  }
+  .BLOG_content .BLOG_post {
+    margin: 0 auto;
+  }
+  .BLOG_content .BLOG_post .blog_image {
+    width: 370px !important;
+  }
+  .BLOG_content .BLOG_post .blog_stat {
+    width: 370px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 800px) {
